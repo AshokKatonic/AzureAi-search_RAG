@@ -1,0 +1,7 @@
+azure-search-documents
+openai
+python-dotenv
+numpy
+azure-core
+PyPDF2
+tiktoken
