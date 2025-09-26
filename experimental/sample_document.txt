@@ -1,0 +1,40 @@
+Azure Cognitive Search RAG Implementation
+
+This document explains how to implement a Retrieval-Augmented Generation (RAG) system using Azure Cognitive Search and Azure OpenAI.
+
+## Overview
+RAG combines the power of large language models with external knowledge retrieval to provide more accurate and contextual responses. The system works by:
+
+1. Indexing documents into Azure Cognitive Search with vector embeddings
+2. Converting user queries to embeddings for similarity search
+3. Retrieving relevant document chunks
+4. Using retrieved context to generate responses with Azure OpenAI
+
+## Key Components
+
+### Azure Cognitive Search
+- Stores document chunks with vector embeddings
+- Performs vector similarity search
+- Returns most relevant content based on query embeddings
+
+### Azure OpenAI
+- Generates embeddings for documents and queries
+- Provides chat completion with retrieved context
+- Ensures responses are grounded in the indexed knowledge
+
+### Vector Search
+- Uses HNSW algorithm for efficient similarity search
+- Supports cosine similarity for semantic matching
+- Configurable parameters for search quality vs speed
+
+## Implementation Benefits
+- Accurate responses based on your specific data
+- Reduced hallucination compared to raw LLM responses
+- Scalable to large document collections
+- Real-time query processing with sub-second response times
+
+## Best Practices
+- Chunk documents appropriately (500-1000 characters)
+- Use overlapping chunks to maintain context
+- Regular index updates for new content
+- Monitor search quality and adjust parameters as needed
