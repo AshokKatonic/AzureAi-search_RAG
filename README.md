@@ -79,18 +79,6 @@ answer = query_rag("Your question here")
 print(answer)
 ```
 
-## Code Corrections Made
-
-The original code had several issues that have been fixed:
-
-1. **Dependencies**: Updated `requirements.txt` to include the correct Azure packages
-2. **Imports**: Removed duplicate imports and added missing imports
-3. **Environment Variables**: Added proper environment variable handling with `python-dotenv`
-4. **Index Creation**: Added function to create search index with proper vector search configuration
-5. **Error Handling**: Added comprehensive error handling throughout the code
-6. **Sample Data**: Created `sample_document.txt` for testing
-7. **Progress Logging**: Added progress indicators for better user experience
-
 ## Key Functions
 
 - `create_search_index()`: Creates or updates the search index with vector search
@@ -118,3 +106,4 @@ The original code had several issues that have been fixed:
 - Vector search uses HNSW algorithm with cosine similarity
 - All API calls include proper error handling and logging
 - Multi-format processing automatically detects file types and applies appropriate extraction methods
+
