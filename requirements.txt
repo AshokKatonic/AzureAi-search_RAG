@@ -5,3 +5,9 @@ numpy
 azure-core
 PyPDF2
 tiktoken
+python-docx
+pandas
+python-pptx
+openpyxl
+azure-storage-blob
+azure-identity
